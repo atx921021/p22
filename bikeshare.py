@@ -31,7 +31,7 @@ def get_filters():
             month = months.index(month) + 1
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-         df['day_of_week'] = df['Start Time'].dt.weekday_name
+        df['day_of_week'] = df['Start Time'].dt.weekday_name
         if day != 'all':
             day = df[df['day_of_week'] == day.title()]
 
