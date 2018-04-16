@@ -103,11 +103,11 @@ def station_stats(df):
         filename = CITY_DATA(city)
         df = pd.read_csv(filename)
         df['start station'].value_counts()
-        most commonly used start station = df['start station'].value_counts()
+        most_commonly_used_start_station = df['start station'].value_counts()
 
 
     # TO DO: display most commonly used end station
-        most commonly used end station = df['end station'].value_counts()
+        most_commonly_used_end_station = df['end station'].value_counts()
 
 
     # TO DO: display most frequent combination of start station and end station trip
@@ -130,11 +130,11 @@ def trip_duration_stats(df):
        
         filename = CITY_DATA(city)
         df = pd.read_csv(filename)
-        total travel time = df['Trip Duration'].sum()
+        total_travel_time = df['Trip Duration'].sum()
 
 
     # TO DO: display mean travel time
-        mean travel time = df['Trip Duration'].mean()
+        mean_travel_time = df['Trip Duration'].mean()
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -154,13 +154,13 @@ def user_stats(df):
 
 
     # TO DO: Display counts of gender
-    counts of gender = df['Gender'].value_counts()
+    counts_of_gender = df['Gender'].value_counts()
 
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    most common year of birth = df['Birth Year'].mode()[0]
+    most_common_year_of_birth = df['Birth Year'].mode()[0]
     earliest = df['Birth Year'].min()
-    most recent = df['Birth Year'].max()
+    most_recent = df['Birth Year'].max()
     
 
 
@@ -185,3 +185,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
