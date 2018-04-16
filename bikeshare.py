@@ -6,6 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -17,6 +18,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    city = input
     while city == 'chicago'or 'new york city'or 'washington' :
        
         filename = CITY_DATA(city)
@@ -51,6 +53,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
    """
+    city = input
     while city == 'chicago'or 'new york city'or 'washington' :
         
         filename = CITY_DATA(city)
@@ -67,7 +70,8 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    # TO DO: display the most common month 
+    city = input
     while city == 'chicago'or 'new york city'or 'washington' :
        
         filename = CITY_DATA(city)
